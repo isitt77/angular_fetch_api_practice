@@ -16,9 +16,9 @@ export class AppComponent {
   }
 
   getApi() {
-    this.http.get('https://api.ebird.org/v2/ref/taxonomy/ebird?species=hottea1&version=2022').subscribe(
+    this.http.get('https://api.ebird.org/v2/ref/taxonomy/ebird').subscribe(
       {
-        next: response => response,
+        next: response => console.log(response),
         error: error => console.log(error)
       }
     )
