@@ -21,7 +21,7 @@ export class AppComponent {
   }
 
   getApi() {
-    this.http.get('https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/LandClassification/FeatureServer/68/query?where=1%3D1&outFields=*&outSR=4326&f=json').subscribe(
+    this.http.get('https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/ParkBoundaries/FeatureServer/0/query?where=1%3D1&outFields=*&outSR=4326&f=json').subscribe(
       {
         next: response => {
           this.data = response;
