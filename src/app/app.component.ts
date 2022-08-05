@@ -16,7 +16,7 @@ export class AppComponent {
   }
 
   getApi() {
-    this.http.get('https://api.ebird.org/v2/ref/taxonomy/ebird').subscribe(
+    this.http.get('https://services5.arcgis.com/4LKAHwqnBooVDUlX/arcgis/rest/services/LandClassification/FeatureServer/68/query?where=1%3D1&outFields=*&outSR=4326&f=json').subscribe(
       {
         next: response => console.log(response),
         error: error => console.log(error)
